@@ -1,0 +1,215 @@
+/* reset-PC css 초기화*/ 
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
+code,form,fieldset,legend,textarea,p,blockquote,
+th,td,input,select,textarea,button {
+	margin:0;
+	padding:0
+}
+
+fieldset,img {
+	border:0 none
+}
+
+dl,ul,ol,menu,li {
+	list-style:none
+}
+
+blockquote, q {
+	quotes: none
+}
+
+blockquote:before, blockquote:after,q:before, q:after {
+	content:'';
+	content:none	
+}
+
+input,select,textarea,button {
+	vertical-align:middle
+}
+
+button {
+	border:0 none;
+	background-color:transparent;
+	cursor:pointer
+}
+body {
+	background:#fff
+}
+
+body,th,td,input,select,textarea,button {
+	font-size:12px;
+	line-height:1.5;
+	font-family:"Malgun Gothic",'돋움',dotum,sans-serif;
+	color:#333
+} /* color값은 디자인가이드에 맞게사용 */
+
+a {
+	color:#333;
+	text-decoration:none
+}
+a:active, a:hover {
+	text-decoration:underline
+}
+
+address,caption,cite,code,dfn,em,var {
+	font-style:normal;
+	font-weight:normal
+}
+/* css 초기화 끝*/
+
+
+
+#wrap{
+	margin:0 auto;
+	/*display:none;*/
+}
+#top{
+	
+}
+#center{
+	
+}
+#bottom{
+	
+}
+/*탑 고정라인*/
+/* 헤더영역 */
+.font {
+    color: white;
+    font-size: 20;
+    cursor: pointer;
+}
+.header_wrap {
+    width: 100%;
+    margin: 0 auto;
+    z-index: 999;
+    position: relative;
+}
+.header {
+    width: 100%;
+    height: 100;
+    margin: 0 auto;
+    background: darkturquoise;
+}
+.header_login {
+    margin: 0 auto;
+    width: 170;
+}
+.header_login_form{
+	width: 200;
+    margin-left: 420;
+}
+
+.site_name {
+    position: absolute;
+    width: 250;
+    height: 100;
+    margin-left: 480;
+    margin-top: -10;
+}
+.site_banner{
+	
+}
+
+/*네비게이션 색상*/
+
+.navi_bg {
+    background: darkturquoise;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    border-top-style: groove;
+}
+
+
+/*네비게이션 전체 영역 제어*/
+
+.nav {
+    height: 35px;
+    list-style: none;
+    width: 840px;
+    margin: auto;
+    background: darkturquoise;
+    font-size: 12px;
+    color: #eee;
+}
+/*주메뉴 영역 제어*/
+.topnav1{
+	text-align:center;
+	width:60px;
+	height:15px;
+	font-weight:bold;
+}
+.topnav{
+	text-align:center;
+	width:150px;
+	height:15px;
+	cursor:pointer;
+	font-weight:bold;
+}
+
+
+/*주메뉴 마우스 오버시*/
+
+.topnav:hover{
+	color:#d3d3d3;
+}
+
+
+/*주메뉴,서브메뉴 한묶음 제어*/
+
+.navi_set{
+	float: left;
+	padding:10px;
+	position: relative;
+	margin-right: -20;
+}
+
+
+/*서브메뉴 전체영역 제어*/
+
+.subnav{
+	position: absolute;
+	left: 0; top: 35px;
+	background: darkturquoise;
+	display: none;
+
+}
+
+
+/*서브메뉴 한칸 제어*/
+
+.subnav li {
+    padding: 10px;
+    width: 150px;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+/*서브메뉴 마우스 오버시*/
+
+.subnav li:hover{
+	background:#555;
+}
+
+/*바텀 고정라인*/
+.footer_wrap {
+    width: 100%;
+    border-top-style: groove;
+}
+.footer{
+    width: 1150;
+    height: 85;
+    margin: 0 auto;
+}
+.footer_logo{
+	
+}
+.footer_address {
+    margin-left: 440;
+    margin-top: 20;
+    position: absolute;
+    margin-bottom: 20;
+}
