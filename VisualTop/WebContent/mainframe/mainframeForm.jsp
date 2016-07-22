@@ -13,19 +13,19 @@
 <body>			
 	<div id = "wrap">
 		<div id = "top" >
-			<div>		
+			<div>	
 				<jsp:include page="topMenuForm.jsp"></jsp:include>	
-			</div>
+			</div>	
 		</div>
 		<div id = "center">			
 			<div>		
 				<jsp:include page="${center}.jsp"></jsp:include>
-			</div>
+			</div>	
 		</div>
 		<div id = "bottom">
-			<div>		
+			<div>	
 				<jsp:include page="bottomForm.jsp"></jsp:include>	
-			</div>
+			</div>	
 		</div>
 	</div>
 </body>

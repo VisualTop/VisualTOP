@@ -46,10 +46,11 @@ body,th,td,input,select,textarea,button {
 
 a {
 	color:#333;
-	text-decoration:none
+	text-decoration:none;
 }
 a:active, a:hover {
-	text-decoration:underline
+	text-decoration:none;
+	color:#5D5D5D; 
 }
 
 address,caption,cite,code,dfn,em,var {
@@ -66,9 +67,11 @@ address,caption,cite,code,dfn,em,var {
 }
 #top{
 	
+	
+	
 }
 #center{
-	
+	margin-top: 75;
 }
 #bottom{
 	
@@ -76,9 +79,11 @@ address,caption,cite,code,dfn,em,var {
 /*탑 고정라인*/
 /* 헤더영역 */
 .font {
-    color: white;
-    font-size: 20;
+    color: #ABABAB;
+    font-size: 16;
     cursor: pointer;
+    margin: 5;
+   
 }
 .header_wrap {
     width: 100%;
@@ -88,9 +93,9 @@ address,caption,cite,code,dfn,em,var {
 }
 .header {
     width: 100%;
-    height: 100;
+    height: 100;darkturquoise
     margin: 0 auto;
-    background: darkturquoise;
+    background: white;
 }
 .header_login {
     margin: 0 auto;
@@ -98,7 +103,7 @@ address,caption,cite,code,dfn,em,var {
 }
 .header_login_form{
 	width: 200;
-    margin-left: 420;
+    margin-left: 550;
 }
 
 .site_name {
@@ -115,11 +120,12 @@ address,caption,cite,code,dfn,em,var {
 /*네비게이션 색상*/
 
 .navi_bg {
-    background: darkturquoise;
     position: absolute;
     bottom: 0;
     width: 100%;
-    border-top-style: groove;
+    border-bottom-style:ridge;
+    border-bottom-color: #6A84B7;
+    border-bottom-width: 0.8px;
 }
 
 
@@ -130,9 +136,10 @@ address,caption,cite,code,dfn,em,var {
     list-style: none;
     width: 840px;
     margin: auto;
-    background: darkturquoise;
+    background: white;
     font-size: 12px;
-    color: #eee;
+    color: #5D5D5D;
+   
 }
 /*주메뉴 영역 제어*/
 .topnav1{
@@ -197,19 +204,26 @@ address,caption,cite,code,dfn,em,var {
 /*바텀 고정라인*/
 .footer_wrap {
     width: 100%;
-    border-top-style: groove;
+    border-top-style: ridge;
+    border-top-width: 1;
+    border-top-color: #6A84B7;
 }
 .footer{
     width: 1150;
-    height: 85;
+    height: 70;
     margin: 0 auto;
 }
 .footer_logo{
 	
 }
 .footer_address {
-    margin-left: 440;
-    margin-top: 20;
-    position: absolute;
-    margin-bottom: 20;
+   margin-left:350;
+   margin-top: 26;
+   margin-bottom: 10;
+  color:black;
+   
+}
+.ceo{
+	font-size:13px;
+	font-weight: bold;
 }

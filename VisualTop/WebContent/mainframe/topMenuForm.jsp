@@ -7,9 +7,9 @@
 	<div class="header">
 		<div class="header_login">
 			<div class="header_login_form">						
-				<a class="font" href = "main.do">홈</a>
-				<a class="font" href = "loginForm.do">로그인</a>
-				<a class="font">회원가입</a>
+				<a class="font" href = "main.do">HOME</a>
+				<a class="font" href = "loginForm.do">LOGIN</a>
+				<a class="font">SIGN</a>
 			</div>
 		</div>
 		<div class="navi_bg">
@@ -18,9 +18,7 @@
 					<li class="navi_set">  
 						<div class="topnav1"></div>
 					</li>   
-					<li class="navi_set">  
-						<div class="topnav1"></div>
-					</li> 
+				
 					<li class="navi_set">  
 						<div class="topnav"
 							onclick="location='centerinfo.do'">센터 소개</div>
@@ -46,7 +44,8 @@
 							<li onclick="location='pttrinfo.do'">트레이너 정보</li>  
 							<li onclick="location='gxtrinfo.do'">GX강사 정보</li>  
 						</ul>  
-					</li> 
+					</li>
+					
 					<li class="navi_set">  
 						<div class="topnav"
 							onclick="location='communityboard.do'">커뮤니티</div>
@@ -54,6 +53,13 @@
 							<li onclick="location='mainboard.do'">공지사항 게시판</li>  
 							<li onclick="location='freeboard.do'">자유 게시판</li> 
 							<li onclick="location='FAQ.do'">FAQ</li>   
+						</ul>  
+					</li> 
+						<li class="navi_set">
+						<div class="topnav">몰넣을까요?</div>
+						<ul class="subnav">  
+							<li>트레이너 정보</li>  
+							<li>GX강사 정보</li>  
 						</ul>  
 					</li> 
 				</ul> 
