@@ -18,7 +18,7 @@
 					<div class="header_login">
 						<div class="header_login_form">						
 							<a class="font" href = "main.do">홈</a>
-							<a class="font">로그인</a>
+							<a class="font" href = "loginForm.do">로그인</a>
 							<a class="font">회원가입</a>
 						</div>
 					</div>
