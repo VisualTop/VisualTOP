@@ -2,12 +2,12 @@
     pageEncoding="UTF-8"%>
 <%@ include file = "mainframeSetting.jsp" %>
 
-<script src="${mainframe}/script/mainframeCenterSilder.js" type="text/javascript"></script>
-<link href="${mainframe}/css/mainframeCenterStyle.css" rel="stylesheet"	type="text/css">
+<script src="${script}mainframeCenterSilder.js" type="text/javascript"></script>
+<link href="${css}mainframeCenterStyle.css" rel="stylesheet"	type="text/css">
+
 
 
 <body>
-
 	<div class="center_wrap">
 		 <div id="sliderFrame">
        		<div id="slider">
@@ -51,7 +51,5 @@
 				</table>
 			</div>
 		</div>	
-	</div>
-	
+	</div>	
 </body>
-</html>

@@ -15,6 +15,8 @@ var sliderOptions=
 	/*license: "mylicense"*/
 };
 
+
+
 var imageSlider=new mcImgSlider(sliderOptions);
 
 /* Menucool Javascript Image Slider v2016.4.2. Copyright www.menucool.com */

@@ -1,29 +1,28 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 
+<%@ include file = "mainframeSetting.jsp" %>
 
-<h2>로그인 페이지 <br> 바꿔야함</h2>
+<link href="${css}loginFormStyle.css" rel="stylesheet"	type="text/css">
 
-<!-- 확인용 지워도됨
-<form method = "post" action = "loginPro.do">
-	<table border = "1">
-		<tr>
-			<th>아이디</th>
-			<td>
-				<input class = "input" type = "text" name = "id">
-			</td>
-		</tr>
-		<tr>
-			<th>비밀번호</th>
-			<td>
-				<input class = "input" type = "password" name = "passwd">
-			</td>
-		</tr>
-		<tr>
-			<th colspan = "2">
-				<input type = "submit" value = "로그인">
-			</th>
-		</tr>
-	</table>
-</form>
--->
+
+	
+		<div class="body">
+			<div class="header">
+				<div>Visual<span>T.O.P</span></div>
+			</div>
+		
+			<div class="login">
+				<input type="text" placeholder="userId" name="user"><br>
+				<input type="password" placeholder="password" name="password"><br>
+				<input type="button" value="Login">
+				
+			</div>			
+			<div class="sign1">			
+				<a href="inputform" >회원가입</a>									
+			</div>
+			<div class="sign2">
+				<a href="mbsearchform">아이디/비밀번호찾기</a>
+			</div>
+		</div>
+		

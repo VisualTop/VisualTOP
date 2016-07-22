@@ -28,13 +28,25 @@ public class PageController {
 	public ModelAndView main(HttpServletRequest request, 
 			HttpServletResponse response){
 		
-		String center = "mainframeCenter"; 
+		//String top = "topMenuForm";
+		String center = "mainframeCenter";
+		//String bottom = "bottomForm";
+		//request.setAttribute("top", top);
 		request.setAttribute("center", center);
+		//request.setAttribute("bottom", bottom);
 		
 		return new ModelAndView("/mainframe/mainframeForm");
 	}//main
 	
 	//센터에 들어갈 로그인폼
+	@RequestMapping("/loginForm")
+	public ModelAndView loginForm(HttpServletRequest request, 
+			HttpServletResponse response){
+		
+		String center = "loginForm";
+		request.setAttribute("center", center);
+		return new ModelAndView("/mainframe/mainframeForm");
+	}
 /*	확인용
 	@RequestMapping("/loginForm")
 	public ModelAndView loginForm(HttpServletRequest request, 
