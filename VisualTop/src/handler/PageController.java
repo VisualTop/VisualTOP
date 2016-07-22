@@ -19,7 +19,7 @@ import member.MemberDao;
 @Controller
 public class PageController {
 	
-	//DBBean 객체생성
+	//DBBean 객체생성 bean패키지 CreateBean에 이름있음
 	@Resource(name = "memberDao")
 	private MemberDao memberDao;
 	
@@ -35,6 +35,7 @@ public class PageController {
 	}//main
 	
 	//센터에 들어갈 로그인폼
+/*	확인용
 	@RequestMapping("/loginForm")
 	public ModelAndView loginForm(HttpServletRequest request, 
 			HttpServletResponse response){
@@ -43,7 +44,8 @@ public class PageController {
 		request.setAttribute("center", center);
 		return new ModelAndView("/mainframe/mainframeForm");
 	}
-	
+*/	
+/*	확인용
 	//로그인실행시 DBBean실행할 메소드
 	@RequestMapping("/loginPro")
 	public ModelAndView loginPro(HttpServletRequest request, 
@@ -51,15 +53,15 @@ public class PageController {
 		
 		//submit된 id와 passwd를 받는다.
 		String id = request.getParameter("id");
-		String passwd = request.getParameter("passwd");
+		//String passwd = request.getParameter("passwd");
 		
-		int resultCheck = memberDao.loginMember(id, passwd);
+		int resultCheck = memberDao.checkMember(id);
 		request.setAttribute("resultCheck", resultCheck);
 		request.setAttribute("id", id);
 		
-		return new ModelAndView("/mainframe/mainframeForm");
+		return new ModelAndView("/mainframe/loginPro");
 	}
-	
+*/	
 	
 	@RequestMapping("/centerinfo")
 	public ModelAndView centerinfo(HttpServletRequest request, 

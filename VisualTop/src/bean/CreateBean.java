@@ -1,9 +1,14 @@
 package bean;
 
+import javax.annotation.Resource;
+
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.ViewResolver;
 import org.springframework.web.servlet.view.UrlBasedViewResolver;
+
+import member.MemberDBBean;
+import member.MemberDao;
 
 
 
@@ -18,6 +23,15 @@ public class CreateBean {
 		viewResolver.setSuffix(".jsp");
 		
 		return viewResolver;		
+	}
+	
+	
+	@Bean
+	public MemberDao memberDao(){
+		//Controller.java에서 사용할 DBd의 Bean이름
+		//@Resource(name = "memberDao") <---얘때문에 씀
+		//private MemberDao memberDao;
+		return new MemberDBBean();
 	}
 	
 	/*

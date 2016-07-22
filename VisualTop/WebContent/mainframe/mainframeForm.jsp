@@ -11,7 +11,8 @@
 </head>
 
 <body>
-	<div id = "wrap">
+			
+		<div id = "wrap">
 		<div id = "top" >
 			<div class="header_wrap">
 				<div class="header">
@@ -73,6 +74,12 @@
 			</div>
 		</div>
 		<div id = "center">
+			<c:if test="${sessionScope.memId eq null }">
+				로그인안됨
+			</c:if>
+			<c:if test="${sessionScope.memId ne null }">
+				로그인됨
+			</c:if>
 			<div>		
 				<jsp:include page="${center}.jsp"></jsp:include>	
 			</div>

@@ -1,5 +1,7 @@
 package member;
 
+import mybatis.SqlMapClient;
+
 public class MemberDBBean implements MemberDao {
 
 	@Override
@@ -10,7 +12,8 @@ public class MemberDBBean implements MemberDao {
 
 	@Override
 	public int checkMember(String id) {
-		// TODO Auto-generated method stub
+		//확인용임 지워도됨
+		//int count = SqlMapClient.getSession().selectOne("Member.checkMember",id);
 		return 0;
 	}
 
